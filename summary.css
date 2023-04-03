@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background-color-1: hsl(252, 100%, 67%);
+  --background-color-2: hsl(241, 81%, 54%);
+  --background-color-3: hsl(0, 0%, 100%);
+  --circle-color-1: hsla(256, 72%, 46%, 1);
+  --circle-color-2: hsla(241, 72%, 46%, 0);
+  --summary-text-1: hsl(0, 100%, 67%);
+  --summary-text-2: hsl(39, 100%, 56%);
+  --summary-text-3: hsl(166, 100%, 37%);
+  --summary-text-4: hsl(234, 85%, 45%);
+  --summary-background-1: hsla(0, 100%, 67%, 0.1);
+  --summary-background-2: hsl(39, 100%, 56%, 0.1);
+  --summary-background-3: hsl(166, 100%, 37%, 0.1);
+  --summary-background-4: hsl(234, 85%, 45%, 0.1);
+  --text-1: hsl(221, 100%, 96%);
+  --text-2: hsl(241, 100%, 89%);
+  --text-3: hsl(224, 30%, 27%);
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.component-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6rem;
+}
+
+.result-container {
+  background-color: var(--background-color-1);
+  width: 20rem;
+  height: 27rem;
+  border: 2px solid var(--background-color-1);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.result-text {
+  color: var(--text-2);
+  font-size: 18px;
+  margin: 30px;
+}
+
+.circle {
+  background-color: var(--circle-color-1);
+  margin: auto;
+  margin-bottom: 1.5rem;
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid var(--circle-color-2);
+  border-radius: 50%;
+}
+
+.circle-text1 {
+  color: var(--background-color-3);
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+.circle-text2 {
+  color: var(--text-2);
+  font-size: 14px;
+}
+
+.great-text {
+  color: var(--background-color-3);
+  font-weight: 800;
+  font-size: 25px;
+  margin-bottom: 1.2rem;
+}
+
+.p-text {
+  color: var(--text-2);
+  font-size: 18px;
+  margin-bottom: 1.2rem;
+}
+
+/* SUMMARY CONTAINER */
+
+.summary-container {
+  background-color: var(--background-color-3);
+  border: 2px solid var(--background-color-3);
+  border-radius: 20px;
+  width: 21rem;
+  box-shadow: 7px 3px 8px 6px #a1a1a1;
+}
+
+.summary-text {
+  margin: 1rem;
+  font-size: 20px;
+}
+
+.summary-text,
+.summary-com {
+  padding-left: 1.5rem;
+}
+
+img {
+  width: 1.2rem;
+}
+
+.summary-com {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 1.5rem;
+  padding: 0.6rem;
+  border-radius: 7px;
+  border-left: 1px solid var(--text-2);
+  border-right: 1px solid var(--text-2);
+}
+
+.text {
+  margin: 0 0.5rem;
+}
+
+.text-1 {
+  color: var(--summary-text-1);
+}
+
+.text-2 {
+  color: var(--summary-text-2);
+}
+
+.text-3 {
+  color: var(--summary-text-3);
+}
+
+.text-4 {
+  color: var(--summary-text-4);
+}
+
+.summary-com-1 {
+  background-color: var(--summary-background-1);
+  border: 1px solid var(--summary-background-1);
+}
+
+.summary-com-2 {
+  background-color: var(--summary-background-2);
+  border: 1px solid var(--summary-background-2);
+}
+
+.summary-com-3 {
+  background-color: var(--summary-background-3);
+  border: 1px solid var(--summary-background-3);
+}
+
+.summary-com-4 {
+  background-color: var(--summary-background-4);
+  border: 1px solid var(--summary-background-4);
+}
+
+.number {
+  margin-left: 5rem;
+  font-weight: 700;
+}
+
+.numbers {
+  margin-left: 6rem;
+  font-weight: 700;
+}
+
+.second-number {
+  color: #a1a1a1;
+}
+
+.last-p {
+  text-align: center;
+  background-color: var(--text-3);
+  color: var(--background-color-3);
+  border-radius: 20px;
+  margin: 2rem;
+  padding: 0.7rem;
+  font-weight: 500;
+}
+
+.last-p:hover {
+  background-color: var(--background-color-1);
+  cursor: pointer;
+}
+
+/* RESPONSIVE SECTION */
+
+@media screen and (max-width: 767px) {
+  .component-container {
+    display: block;
+    justify-content: none;
+    align-items: none;
+    margin: 0;
+    width: 100%;
+  }
+  .result-container {
+    width: 21rem;
+    height: 25rem;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+  }
+  .summary-container {
+    width: 21rem;
+    border: none;
+    border-radius: 1px;
+    margin-top: auto;
+    box-shadow: none;
+  }
+  .result-text {
+    font-size: 18px;
+    margin: 20px;
+  }
+  .circle {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .component-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
